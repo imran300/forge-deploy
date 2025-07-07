@@ -4,14 +4,11 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    dd([
-        'framewwork'=>storage_path('framework/cache'),
-        'stores'=>config('cache.stores.file.path'),
-        'cache'=>config('cache')
-    ]);
-
     return Inertia::render('Welcome');
 })->name('home');
+Route::get('testing',function(){
+    dd('testing. deployment');
+});
 
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
