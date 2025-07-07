@@ -7,7 +7,7 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 })->name('home');
 Route::get('testing',function(){
-    dd('testing. deployment');
+    dd('testing anees');
 });
 
 Route::get('dashboard', function () {
